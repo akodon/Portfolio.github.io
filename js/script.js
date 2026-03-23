@@ -93,9 +93,9 @@ const works=[{
     link:["https://unityroom.com/games/connectstation",],
     label:["unityroom",],
     image:[
-        '../images/tunagete/title.jpg',
-        '../images/tunagete/photo1.png',
-        '../images/tunagete/photo2.png',
+        'images/tunagete/title.jpg',
+        'images/tunagete/photo1.png',
+        'images/tunagete/photo2.png',
     ]
 },
 {
@@ -104,9 +104,9 @@ const works=[{
         link:[" ",],
     label:[" ",],
     image:[
-        '../images/kurageschool/title.jpg',
-        '../images/kurageschool/photo1.jpg',
-        '../images/kurageschool/photo2.jpg',
+        'images/kurageschool/title.jpg',
+        'images/kurageschool/photo1.jpg',
+        'images/kurageschool/photo2.jpg',
     ]
 }
 ]
