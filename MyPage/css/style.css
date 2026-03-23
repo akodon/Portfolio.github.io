@@ -1,0 +1,300 @@
+/* VARIAVLES
+======================================= */
+:root{
+    --light-blue:#c0cbff;
+    --blue:blue;
+    --dark-blue:#002b99;
+    --navy:#202f55;
+    --white:white;
+    --black:black;
+    --kiwi:'Kiwi Maru',serif;
+}
+
+
+/* GENERAL STYING
+======================================= */
+body{
+    text-align: center;
+    font-family: var(--kiwi);
+    margin: 0;
+    background-image: url('../images/backgroundImage.JPG');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--dark-blue);
+
+}
+
+/* COMMON 
+========================================*/
+p{
+    font-family: var(--kiwi);
+    line-height: 1.7;
+}
+
+.title{
+    margin: 3rem;
+}
+
+.contentbox{
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/* ローディング 
+========================================*/
+#loading{
+    background-color:var(--dark-blue);
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading p{
+    font-size: 3rem;
+    color: var(--light-blue);
+}
+/*　メニューバー
+====================================== */
+#nav{
+    position: fixed;
+    z-index: 9998;
+    width: 40%;
+    left: 30%;
+    background-color: var(--light-blue);
+    padding: 20px 0;
+    border-radius: 20px;
+    margin: 8px;
+}
+
+#nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#nav a{
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 18px;
+}
+
+#nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: var(--white);
+    transform: .3s ease;
+}
+#nav a:hover::after{
+    width: 100%;
+}
+
+
+/* ヒーローエリア
+==================================== */
+#container{
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+}
+
+#hero{
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    background-color: var(--light-blue); 
+    overflow: hidden;
+}
+
+.layer{
+    position: absolute;
+    inset: -8%;
+}
+
+.back{
+    background:url('../images/kurage.png') no-repeat center/cover;
+    z-index: 2;
+}
+.middle{
+    background: url('../images/kiri.png') no-repeat center/cover;
+    z-index: 3;
+}
+.front{
+    background: url('../images/kiro.png') no-repeat center/cover;
+    z-index: 4;
+}
+
+/* お知らせ
+============================================== */
+#news{
+    position: relative;
+    margin-left: 5%;
+
+}
+
+.news-list{
+    list-style: none;
+    height: 400px;
+    width: 40vw;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.news-list li{
+    text-align: left;
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-list time{
+    color: #777;
+    width: 120px;
+}
+
+/* 自己紹介 
+================================================*/
+#about{
+    width: 100%;
+    margin: auto;
+    padding: 100px;
+    background-color: var(--white);
+
+}
+
+#icon{
+    height: 15rem;
+    border-radius: 50%;
+}
+.about-content{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.snslink{
+    margin: 1rem;
+}
+
+/* ゲーム
+============================================== */
+#games{
+    width: 100%;
+    margin: auto;
+    padding: 150px;
+    background-color: var(--white);
+}
+.games-thumbnails{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px; 
+}
+.games-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.games-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform .35s ease;
+}
+
+.games-item:hover img{
+    transform:scale(1.08) ;
+}
+
+/* ポップアップ 
+============================================*/
+.popup{
+    position:fixed;
+    inset: 0;
+    z-index: 9998;
+    background: rgba(0, 0, 0, 0.8);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-links a{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup-content{
+    position: relative;
+    background: var(--white);
+    padding: 45px;
+    border-radius: 10px;
+    
+    display: flex;
+    gap: 40px;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.slide-area{
+    position: relative;
+    width: 800px;
+}
+.img-area{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.popup-text{
+    width: 300px;
+}
+
+.prev,.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: var(--white);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.prev:hover,.next:hover{
+    text-shadow: 3px 3px 5px var(--navy) ;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+
+/* コンタクト
+================================== */
+#contact{
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: var(--white);
+}

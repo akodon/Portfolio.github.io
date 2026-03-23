@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanmi_HP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- ローディング画面 -->
+    <div id="loading">
+        <p>ようこそ</p>
+        <div id="loading-screen"></div>
+    </div>
+    <!-- ナビゲーションメニュー --> 
+    <section id="nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#games">GAME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </section>
+    <div id="container">
+        <!-- ヒーローエリア -->
+        <section id="hero">
+            <h1 class="title">優しいあなたへ</h1>
+            <div class="layer back"></div>
+            <div class="layer middle"></div>
+            <div class="layer front"></div>
+        </section>
+        <!-- お知らせ -->
+        <section id="news">
+            <h1 class="title">おしらせ</h1>
+            <ul class="news-list">
+                <li>
+                    <time>2026.03.01</time>
+                    ホームページ公開しました。
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!-- 自己紹介 -->
+    <div class="contentbox">
+    <section id="about">
+        <h1 class="title">私について</h1>
+        <img id="icon" src="images/angel_icon.jpg">
+        <h2>甘味</h2>
+        <P class="about-content">
+            ゲーム・イラスト・live2d・プログラミング・モデリングを一摘みずつ。
+            あと、お砂糖と薬味（スパイス）。<br>
+        </P>
+        <a class="snslink" href="https://x.com/_kanmi00" target="_blank">X</a>
+        <a class="snslink" href="https://www.youtube.com/@kanmikanuma" target="_blank">Yotube</a>
+        <a class="snslink" href="#">aaaaa</a>
+    </section>
+    </div>
+    <!-- ゲーム -->
+    <div class="contentbox">
+     <section id="games">
+        <h1 class="title">ゲーム</h1>
+        <div class="games-content">
+            <ul class="games-thumbnails">
+                <li class="games-item PP"><img src="images/PP/title.png"></li>
+                <li class="games-item tunagete"><img src="images/tunagete/title.jpg"></li>
+                <li class="games-item kurageschool"><img src="images/kurageschool/title.jpg"></li>           
+            </ul>
+        </div>
+        <!-- ポップアップ -->
+        <div class="popup">
+            <div class="popup-content">
+            <span class="close">×</span>
+            <div class="slide-area">
+                <button class="prev">◀</button>     
+                <img class="img-area" src="images/PP/title.png">
+                <button class="next">▶</button>
+            </div>
+            <div>
+                <h2 class="popup-title"></h2>
+                <p class="popup-text"></p>
+                <div class="popup-links"></div>
+            </div>
+            </div>
+        </div>
+     </section>
+     </div>
+    <!-- コンタクト・連絡 -->
+     <section id="contact">
+        <h1 title="title">お問い合わせ</h1>
+        <p>お問い合わせはXのDM、もしくはgoogleFormからお願いします。<br>
+        <button class="contact-button">GoogleForm</button>
+     </div>
+</body>
+</html>
