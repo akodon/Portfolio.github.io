@@ -267,6 +267,7 @@ p{
 
 .popup-text{
     width: 300px;
+    white-space: pre-line;
 }
 
 .prev,.next{
@@ -278,9 +279,12 @@ p{
     background: none;
     border: none;
     cursor: pointer;
+    -webkit-text-stroke: 5px var(--navy);
+    paint-order: stroke;
 }
 .prev:hover,.next:hover{
     text-shadow: 3px 3px 5px var(--navy) ;
+    
 }
 .prev{
     left: 10px;
