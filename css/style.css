@@ -228,13 +228,16 @@ p{
     z-index: 9998;
     background: rgba(0, 0, 0, 0.8);
 
+    margin: auto;
     display: none;
     justify-content: center;
     align-items: center;
 }
 
+
 .popup-links a{
     display: block;
+    margin-top: 20px ;
     margin-bottom: 10px;
 }
 
@@ -268,7 +271,10 @@ p{
 
 .popup-text{
     width: 300px;
+    margin: auto;
     white-space: pre-line;
+    text-align: center;
+    justify-items: center;
 }
 
 .prev,.next{
@@ -327,6 +333,14 @@ p{
     background-color: var(--white);
 }
 
+.contact-button::after{
+    background-color: var(--light-blue);
+    color: var(--white);
+    border-color:var(--white);
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
 
 /* デスクトップサイズ
 =================================== */
@@ -339,6 +353,12 @@ p{
         margin-right: 0%;
         overflow-x: hidden;
     }
+
+    /* ナビゲーションバー */
+    #nav{
+        display: none;
+    }
+
     /*ヒーローエリア*/
     #container{
         margin: 0%;
@@ -369,19 +389,26 @@ p{
         padding: 0;
     }
 
-    /* ゲーム 
-    =================================*/
+    /* ゲーム */
     #games{
         padding: 15%;
         justify-items: center;
     }
     .games-thumbnails{
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
         gap: 10px; 
     }
+    
+    .games-item{
+        height: 250px;
+    }
 
-    /* ポップアップ
-    =============================== */
+    .games-item img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* ポップアップ */
     .popup-content{
         flex-direction: column;
         width: 80%;

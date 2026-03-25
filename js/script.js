@@ -80,9 +80,9 @@ const works=[{
     link:["http://novelgame.jp/games/show/7149 ",],
     label:["ノベルゲームコレクション",],
     image:[
-        "images/PP/title.png",
-        'images/PP/photo1.png',
-        'images/PP/photo2.png',
+        "images/PP/title.jpg",
+        'images/PP/photo1.jpg',
+        'images/PP/photo2.jpg',
         'images/PP/photo3.jpg',
         
     ]
