@@ -195,13 +195,16 @@ p{
 #games{
     width: 100%;
     margin: auto;
-    padding: 150px;
+    padding: 150px 10%;
     background-color: var(--white);
 }
+
+
 .games-thumbnails{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 50px; 
+    padding: 0%;
 }
 .games-item{
     position: relative;
@@ -413,7 +416,8 @@ p{
     }
     
     .games-item{
-        height: 250px;
+        width:  80%;
+        margin: auto;
     }
 
     .games-item img{
@@ -441,5 +445,12 @@ p{
         width: 100%;
         height: auto;
     }
+    /* お問い合わせ */
+    #contact{
+        margin-top: 25%;
+    }
 
+    #contact p{
+        margin: 5%;
+    }
  } 
