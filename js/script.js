@@ -140,8 +140,22 @@ item.forEach((element,index) => {
 
         popup.style.display="flex";
     });
+});
+popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+        popup.animate({
+        opacity:[1,0],
+    },Opation);
+
+    popupContent.animate({
+        transform:["scale(1)","scale(0.8)"],
+    },Opation).finished.then(()=>{
+        popup.style.display="none";
+    });
+    }
     
 });
+
 
 //閉じる
 popupClose.addEventListener('click',()=>{
@@ -165,6 +179,7 @@ nextBtn.addEventListener('click',()=>{
 
     if(currentSide>=works[currentWork].image.length){
         currentSide=0;
+        console.log("next");
     }
     popupImg.src=works[currentWork].image[currentSide];
 });
@@ -173,6 +188,7 @@ prevBtn.addEventListener('click',()=>{
     currentSide--;
     if(currentSide < 0){
         currentSide=works[currentWork].image.length-1;
+        console.log("prev");
     }
     popupImg.src=works[currentWork].image[currentSide];
 });

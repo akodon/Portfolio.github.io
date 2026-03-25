@@ -32,7 +32,7 @@ p{
 }
 
 .title{
-    margin: 3rem;
+    margin: 3rem 0;
 }
 
 .contentbox{
@@ -173,7 +173,7 @@ p{
 #about{
     width: 100%;
     margin: auto;
-    padding: 100px;
+    padding: 10vh 10% ;
     background-color: var(--white);
 
 }
@@ -327,24 +327,36 @@ p{
     background-color: var(--white);
 }
 
+
 /* デスクトップサイズ
 =================================== */
-@media (max-width:900px) {
+@media (max-width:900px) {   
 
+    body{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        margin-right: 0%;
+        overflow-x: hidden;
+    }
     /*ヒーローエリア*/
     #container{
-        margin: 0;
+        margin: 0%;
+        padding: 0%;
         flex-direction: column;
-        gap: 40px;      /* 縦並びになったときの間隔 */
+        align-items: center;
+        width: 100%;     
     }
 
     #hero{
-       width: 100%; 
+       width: 100vw; 
+       margin: auto;
     }
 
     /* お知らせ */
     #news{
-        margin-left: 0;
+        width: 100%;
+        margin: auto;
     }
 
     .news-list{
@@ -352,4 +364,42 @@ p{
         margin: auto;
     }
     
-}
+    /* 自己紹介 */
+    .about-content{
+        padding: 0;
+    }
+
+    /* ゲーム 
+    =================================*/
+    #games{
+        padding: 15%;
+        justify-items: center;
+    }
+    .games-thumbnails{
+        grid-template-columns: 1fr;
+        gap: 10px; 
+    }
+
+    /* ポップアップ
+    =============================== */
+    .popup-content{
+        flex-direction: column;
+        width: 80%;
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .slide-area{
+        width: 100%;
+    }
+
+    .popup-text{
+        width: 100%;
+    }
+
+    .img-area{
+        width: 100%;
+        height: auto;
+    }
+
+ } 
