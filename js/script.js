@@ -94,8 +94,8 @@ const works=[{
     label:["unityroom",],
     image:[
         'images/tunagete/title.jpg',
-        'images/tunagete/photo1.png',
-        'images/tunagete/photo2.png',
+        'images/tunagete/photo1.jpg',
+        'images/tunagete/photo2.jpg',
     ]
 },
 {
@@ -135,7 +135,7 @@ item.forEach((element,index) => {
         });
 
         //表示アニメーション
-        popup.animate({opacity:[0,1.]},Opation);
+        popup.animate({opacity:[0,1]},Opation);
         popupContent.animate({transform:["scale(0.8)","scale(1)"]},Opation);
 
         popup.style.display="flex";
