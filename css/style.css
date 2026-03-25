@@ -79,7 +79,7 @@ p{
 
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap:3vw ;
 }
 
 #nav a{
@@ -124,6 +124,7 @@ p{
     position: absolute;
     inset: -8%;
 }
+
 
 .back{
     background:url('../images/kurage.png') no-repeat center/cover;
@@ -301,4 +302,54 @@ p{
     padding-top: 100px;
     padding-bottom: 50px;
     background-color: var(--white);
+}
+
+.contact-button{
+    margin: 30px ;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-family: var(--kiwi);
+
+    background-color: var(--light-blue);
+    color: var(--white);
+    border-color:var(--white);
+    border-radius: 40px;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-button:hover{
+    transition: translateY(-3px);
+    border-color: var(--light-blue);
+    color: var(--light-blue);
+    background-color: var(--white);
+}
+
+/* デスクトップサイズ
+=================================== */
+@media (max-width:900px) {
+
+    /*ヒーローエリア*/
+    #container{
+        margin: 0;
+        flex-direction: column;
+        gap: 40px;      /* 縦並びになったときの間隔 */
+    }
+
+    #hero{
+       width: 100%; 
+    }
+
+    /* お知らせ */
+    #news{
+        margin-left: 0;
+    }
+
+    .news-list{
+        width: 90%;
+        margin: auto;
+    }
+    
 }
